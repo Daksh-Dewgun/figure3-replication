@@ -13,9 +13,9 @@ This repository contains data and code to replicate **Figure 3** "Content the al
 ```
 figure3_repo/
 ├── run_figure3.sh                  ← ONE-CLICK pipeline (run this)
-├── data/                           ← Place data file here (see below)
+├── data/                           ← Required data file included
 ├── regression_outputs/             ← Auto-populated by Stata step
-├── figs/                           ← Output: Figure 3 PDF saved here
+├── figs/                           ← Output: Figure 3 and supporting PDFs saved here
 └── code/
     ├── stata/
     │   ├── run_stata_figure3.do    ← Master Stata script
@@ -28,7 +28,10 @@ figure3_repo/
     └── py/
         └── plot_newsfeeds.py       ← Generates the figure
 ```
+
 **AI-Use Disclaimer:** Above structure is created using Claude Sonnet 4.6.
+
+
 ---
 
 ## Requirements
@@ -38,7 +41,7 @@ figure3_repo/
 ssc install reghdfe
 ssc install ppmlhdfe
 ```
-I use Stata 19 - License provided to students by University of Birmingham
+I use Stata 19 - License provided to students by University of Birmingham.
 
 In particular, please use StataSE as it supports large datasets like the one used for this study.
 
@@ -93,7 +96,9 @@ python plot_newsfeeds.py
 ## Output
 
 - `figs/newsfeed_barchart_with_pvalues.pdf` — **Figure 3** (full sample)
-NB: running the `run_figure3.sh` only opens the above figure automatically.
+
+NB: running the `run_figure3.sh` file only opens the above figure automatically.
+
 - `figs/newsfeed_barchart_with_pvalues_reps_indeps.pdf` — Republicans & Independents
 - `figs/newsfeed_barchart_with_pvalues_dems.pdf` — Democrats
   
