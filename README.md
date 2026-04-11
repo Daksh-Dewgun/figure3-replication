@@ -1,12 +1,14 @@
-# Figure 3 Replication — "The political effects of X's feed algorithm"
+# Assessment One: AI for Government and Policy
 
-Replicates **Figure 3** ("Content the algorithm promotes") from:
+## Replication of Figure
+
+This repository contains data and code to replicate **Figure 3** "Content the algorithm promotes" from:
 
 > Gauthier, Hodler, Widmer & Zhuravskaya (2026). *The political effects of X's feed algorithm*. Nature. https://doi.org/10.1038/s41586-026-10098-2
 
 ---
 
-## Repository structure
+## The repository is structured as follows:
 
 ```
 figure3_repo/
@@ -26,7 +28,7 @@ figure3_repo/
     └── py/
         └── plot_newsfeeds.py       ← Generates the figure
 ```
-
+**AI-Use Disclaimer:** Above structure is created using Claude Sonnet 4.6.
 ---
 
 ## Requirements
@@ -36,6 +38,9 @@ figure3_repo/
 ssc install reghdfe
 ssc install ppmlhdfe
 ```
+I use Stata 19 - License provided to students by University of Birmingham
+
+In particular, please use StataSE as it supports large datasets like the one used for this study.
 
 **Python 3** with packages (auto-installed by the run script):
 ```
@@ -55,7 +60,7 @@ The data file is **included** in this repository in the `data/` folder:
 
 ## How to run
 
-### One click (recommended)
+### To run in one go:
 
 ```bash
 bash run_figure3.sh
@@ -88,14 +93,16 @@ python plot_newsfeeds.py
 ## Output
 
 - `figs/newsfeed_barchart_with_pvalues.pdf` — **Figure 3** (full sample)
+NB: running the `run_figure3.sh` only opens the above figure automatically.
 - `figs/newsfeed_barchart_with_pvalues_reps_indeps.pdf` — Republicans & Independents
 - `figs/newsfeed_barchart_with_pvalues_dems.pdf` — Democrats
+  
 
 ---
 
 ## Notes on Stata PATH (macOS)
 
-If `bash run_figure3.sh` cannot find Stata, add it to your PATH first:
+If `bash run_figure3.sh` cannot find Stata, please add it to your PATH first:
 
 ```bash
 export PATH=$PATH:/Applications/Stata/StataSE.app/Contents/MacOS
