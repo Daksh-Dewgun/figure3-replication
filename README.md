@@ -46,12 +46,7 @@ pandas matplotlib numpy scipy
 
 ## Data
 
-The data file is **not included** in this repository due to size.
-
-1. Download `main_data_and_newsfeed_data.dta` from the replication archive:
-   https://doi.org/10.6084/m9.figshare.28033772
-
-2. Place it in the `data/` folder:
+The data file is **included** in this repository in the `data/` folder:
    ```
    data/main_data_and_newsfeed_data.dta
    ```
