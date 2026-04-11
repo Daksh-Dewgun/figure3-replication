@@ -98,7 +98,7 @@ python plot_newsfeeds.py
 If `bash run_figure3.sh` cannot find Stata, add it to your PATH first:
 
 ```bash
-export PATH=$PATH:/Applications/Stata/StataMP.app/Contents/MacOS
+export PATH=$PATH:/Applications/Stata/StataSE.app/Contents/MacOS
 ```
 
 Or add this line to your `~/.zshrc` to make it permanent.
