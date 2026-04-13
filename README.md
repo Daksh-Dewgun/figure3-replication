@@ -4,7 +4,7 @@
 
 This repository contains data and code to replicate **Figure 3** "Content the algorithm promotes" from:
 
-> Gauthier, Hodler, Widmer & Zhuravskaya (2026). *The political effects of X's feed algorithm*. Nature. https://doi.org/10.1038/s41586-026-10098-2
+> Gauthier, G., Hodler, R., Widmer, P. et al. The political effects of X’s feed algorithm. Nature 652, 416–423 (2026). https://doi.org/10.1038/s41586-026-10098-2
 
 ---
 
@@ -41,7 +41,7 @@ figure3_repo/
 ssc install reghdfe
 ssc install ppmlhdfe
 ```
-I use Stata 19 - License provided to students by University of Birmingham.
+I use Stata 19 - License provided by University of Birmingham.
 
 In particular, please use StataSE as it supports large datasets like the one used for this study.
 
@@ -73,7 +73,7 @@ This will:
 1. Install Python dependencies
 2. Run the Stata regressions and export p-values to `regression_outputs/`
 3. Generate Figure 3 with Python and save to `figs/`
-4. Automatically open the PDF
+4. Automatically open Figure 3
 
 ### Manual steps
 
@@ -95,7 +95,7 @@ python plot_newsfeeds.py
 
 ## Output
 
-- `figs/newsfeed_barchart_with_pvalues.pdf` — **Figure 3** (full sample)
+- `figs/newsfeed_barchart_with_pvalues.pdf` — **Figure 3** (Content the algorithm promotes)
 
 NB: running the `run_figure3.sh` file only opens the above figure automatically.
 
