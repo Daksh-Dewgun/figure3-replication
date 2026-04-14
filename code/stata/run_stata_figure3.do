@@ -1,5 +1,4 @@
 /*------------------------------------------------------------------------------
-  run_stata_figure3.do
   Runs the full Stata pipeline needed to produce Figure 3.
   Steps:
     1. newsfeed_content_shares.do  - collapse raw data
